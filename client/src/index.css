@@ -1,0 +1,407 @@
+@font-face {
+    font-family: NotoSans-Regular;
+    src: url(./assets/fonts/NotoSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: NotoSans-Bold;
+    src: url(./assets/fonts/NotoSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: NotoSans-Medium;
+    src: url(./assets/fonts/NotoSans-Medium.ttf);
+}
+
+@font-face {
+    font-family: NotoSans-SemiBold;
+    src: url(./assets/fonts/NotoSans-SemiBold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:NotoSans-Regular;
+}
+.link{
+    color: white;
+    text-decoration: none;
+}
+:root {
+    --extradark: #120F13;
+    --dark: #0B090C;
+    --mediumdark: #333333;
+    --semidark:#252329;
+    --lightgray:#3C393F;
+    --textcolor:#E0E0E0;
+    --textcolor2:#BDBDBD;
+    --titlecolor:#828282;
+    --buttoncolor:#2F80ED;
+    --logoutcolor: #EB5757;
+  }
+  @media only screen and (max-width:1400px) {
+    .register-area{
+        width: 470px;
+        height:650px;
+    } 
+    .register-form{
+        gap: 30px;
+    }
+    .messagge-content p{
+        width: 850px;
+    }
+    .messagge-form{
+        width: 75%;
+    }
+    .messagge-form input{
+        width: 90%;
+    }
+    .messagge-form .send-btn{
+        width: 10%;
+    }
+    .messagge-content p{
+        width: 850px;
+    }
+    .messagge-form{
+        width: 75%;
+    }
+}
+
+  @media only screen and (max-width:1200px) {
+    .register-area{
+        width: 470px;
+        height:700px;
+    } 
+    .register-form{
+        gap: 35px;
+    }
+    .messagge-form input{
+        width: 90%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: var(--textcolor);
+    }
+    .messagge-form .send-btn{
+        width: 10%;
+        margin: auto;
+    }
+    h1{
+        font-size: 26px;
+    }
+    .messagge-content p{
+        width: 700px;
+    }
+    .messagge-form{
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    .register-form{
+        gap: 30px;
+    }
+    .sidebar{
+        width: 30%;
+    }
+    .room{
+        width: 70%;
+    }
+    .group-chat{
+        width: 100%;
+    }
+    .user-options{
+        width: 30%;
+    }
+    .sidebar-header{
+        width: 30%;
+    }
+    .group-chat-name{
+        width: 70%;
+    }
+    .messagge-form{
+        width: 60%;
+    }
+    .messagge-form input{
+        width: 90%;
+    }
+    .messagge-form .send-btn{
+        width: 10%;
+        margin: auto;
+    }
+    h1{
+        font-size: 22px;
+    }
+    .messagge-content p{
+        width: 490px;
+    }
+    .room-welcome-image{
+        width: 300px;
+        height: 300px;
+    }
+    .title,.tagline{
+        font-size: 20px;
+     }
+    
+}
+
+@media only screen and (max-width:900px) {
+    .sidebar{
+       display: none;
+    }
+    .room{
+        width: 100%;
+    }
+    .group-chat-name{
+        width: 100%;
+    }
+    .group-chat {
+        width: 100%;
+    }
+    .messagge-form{
+        width: 90%;
+    }
+    .welcome .group-chat-name{
+        visibility: visible;
+        opacity: 1;
+    }
+    .messagge-form input{
+        width: 90%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: var(--textcolor);
+    }
+    .messagge-form .send-btn{
+        width: 10%;
+        margin: auto;
+    }
+    .menubtn{
+        visibility: visible;
+        opacity: 1;
+    }
+    .user-options{
+        width: 300px;
+        color: var(--textcolor2);
+    }
+    .sidebar-header{
+        width: 300px;
+    }
+    .sidebar-main{
+        color: var(--textcolor2);
+    }
+    .messagge-content p{
+        width: 650px;
+    }
+    
+}
+@media only screen and (max-width:768px) {
+    .register-area{
+        width: 350px;
+        height:500px;
+    } 
+    .register-form{
+        gap: 30px;
+    }
+    .register-form input:not([type="file"]){
+        padding: 15px;
+    }
+    .label {
+        padding: 10px;
+    }
+    .choosenlabel {
+        font-size: 13px;
+    }
+    .file-image .image{
+        width: 45px;
+        height: 45px;
+    }
+    .file-img{
+        width: 45px;
+        height: 45px;
+    }
+    .submitbtn{
+        padding: 10px;
+        font-size: 13px;
+    }
+    h1{
+        font-size: 18px;
+    }
+    .register-form input::placeholder{
+        font-size: 10px;
+    }
+    .route p, .route span{
+        font-size: 12px;
+    }
+    .messagge-content p{
+        width: 600px;
+    }
+    .room-welcome-image{
+        width: 250px;
+        height: 250px;
+    }
+    .title,.tagline{
+        font-size: 17px;
+     }
+}
+@media only screen and (max-width:450px) {
+    .messagge-form input{
+        width: 80%;
+        padding:0 15px;
+    }
+    .messagge-form .send-btn{
+        width: 15%;
+    }
+    .group-chat-messagges{
+        font-size: 15px;
+        padding: 0 10px;
+    }
+    .sender-name{
+        font-size: 12px;
+    }
+    .sender-date{
+        font-size: 10px;
+    }
+    .messagge-content p{
+        font-size: 14px;
+    }
+    .register-area{
+        width: 300px;
+        height:520px;
+    } 
+    .register-form{
+        gap: 25px;
+    }
+    .register-form input:not([type="file"]){
+        padding: 10px;
+    }
+    label {
+        padding: 10px;
+        font-size: 10px;
+    }
+    .submitbtn{
+        padding: 5px;
+        font-size: 15px;
+    }
+    h1{
+        font-size: 15px;
+    }
+    .register-form input::placeholder{
+        font-size: 10px;
+    }
+    .route p, .route span{
+        font-size: 11px;
+    }
+    .choosenlabel {
+            padding: 10px;
+            font-size: 10px;
+    }
+    .file-image .image{
+        width: 40px;
+        height: 40px;
+    }
+    .file-img{
+        width: 40px;
+        height: 40px;
+    }
+    .messagge-content p{
+        width: 250px;
+    }
+    .room-welcome-image{
+        width: 190px;
+        height: 190px;
+    }
+    .title,.tagline{
+        font-size: 13px;
+     }
+}
+
+@media only screen and (max-width:320px) {
+    .messagge-form input{
+        width: 80%;
+        padding:0 15px;
+    }
+    .messagge-form .send-btn{
+        width: 15%;
+    }
+    .group-chat-messagges{
+        font-size: 15px;
+        padding: 0 10px;
+    }
+    .sender-name{
+        font-size: 12px;
+    }
+    .sender-date{
+        font-size: 10px;
+    }
+    .messagge-content p{
+        font-size: 14px;
+    }
+    .register-area{
+        width: 270px;
+        height:420px;
+    } 
+    .register-form{
+        gap: 8px;
+    }
+    .register-form input:not([type="file"]){
+        padding: 8px;
+    }
+    label {
+        padding: 8px;
+        font-size: 8px;
+    }
+    .submitbtn{
+        padding: 5px;
+        font-size: 13px;
+    }
+    h1{
+        font-size: 15px;
+    }
+    .register-form input::placeholder{
+        font-size: 10px;
+    }
+    .route p, .route span{
+        font-size: 11px;
+    }
+    .choosenlabel {
+            padding: 10px;
+            font-size: 10px;
+    }
+    .file-image .image{
+        width: 40px;
+        height: 40px;
+    }
+    .file-img{
+        width: 40px;
+        height: 40px;
+    }
+    .room-welcome-image{
+        width: 180px;
+        height: 180px;
+        margin-top: 30px;
+    }
+    .title,.tagline{
+       font-size: 13px;
+    }
+    .messagge-content p{
+        width: 200px;
+    }
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
+  }

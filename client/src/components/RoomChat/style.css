@@ -1,0 +1,128 @@
+
+.chat-container{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+.group-chat-name {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 60px;
+    padding: 10px;
+    background-color: var(--dark);
+    display: flex;
+}
+.group-chat-messagges{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.group-chat-messagge {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.messagge-info{
+    margin-top: 8px;
+}
+.messagge-desc {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.sender-name {
+    font-family: NotoSans-SemiBold;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.035em;
+    color: var(--titlecolor);
+}
+
+.send-date {
+    font-family: NotoSans-Regular;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: -0.035em;
+    color:var(--titlecolor);
+}
+.messagge-content{
+    word-wrap:break-word ;
+}
+.messagge-content p{
+font-family: NotoSans-Regular;
+font-size: 18px;
+line-height: 25px;
+letter-spacing: -0.035em;
+color: var(--textcolor);
+word-wrap: break-word;
+width: 1050px;
+margin: 5px;
+}
+
+.messagge-form{
+    width: 75%;
+    padding: 5px;
+    background-color: var(--dark);
+    position: absolute;
+    bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+}
+.messagge-form input{
+    width: 90%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--textcolor);
+    padding:0 15px;;
+
+}
+.user-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark);
+    padding: 5px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    width: 42px;
+    height: 42px;
+    font-size: 15px;
+}
+.messagge-form .send-btn{
+    width: 10%;
+    border: none;
+   padding:10px;
+   border-radius: 8px;
+    background-color: var(--buttoncolor);
+} 
+.messagge-form input::placeholder{
+font-family: NotoSans-Regular;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: -0.035em;
+color: var(--titlecolor);
+}
+
+.messagge-img img{
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.chat-title{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.menubtn{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}

@@ -1,0 +1,130 @@
+.register{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark);
+}
+
+.register-area{
+    padding: 10px;
+    border-radius: 8px;
+    width: 400px;
+    height:550px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--textcolor);
+}
+
+.register-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+.register-form .input-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.register-form input:not([type="file"]){
+    width: 90%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid var(--textcolor);
+    background-color: transparent;
+    color: var(--textcolor);
+}
+
+
+.choosenlabel {
+    background-color: var(--textcolor);
+    color: var(--dark);
+    text-align: left;
+    padding: 15px;
+    font-size: 15px;
+    font-family: sans-serif;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all .3s ease;
+  }
+
+  .choosenlabel:hover{
+    background-color: transparent;
+    color: var(--textcolor);
+    border-color: var(--textcolor);
+  }
+.register-form input::placeholder{
+    color: var(--textcolor);
+    font-size: 15px;
+}
+
+h1{
+    color: var(--textcolor);
+}
+
+.submitbtn{
+    width: 90%;
+    padding: 15px;
+    border: none;
+    background-color: var(--textcolor);
+    border-radius: 8px;
+    color: var(--dark);
+    font-size: 20px;
+    border: 1px solid transparent;
+    transition: all .3s ease;
+}
+.submitbtn:hover{
+    background-color: transparent;
+    color: var(--textcolor);
+    border-color: var(--textcolor);
+}
+.file-image{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.image{
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--textcolor);
+    border-radius: 8px;
+}
+.image img{
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input-box p{
+    color: darkred;
+    font-size: 15px;
+    width: 90%;
+}
+
+.route{
+    display: flex;
+    gap: 5px;
+    color: var(--textcolor);
+}
+.route span{
+    color: var(--buttoncolor);
+}

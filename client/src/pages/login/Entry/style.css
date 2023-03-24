@@ -1,0 +1,29 @@
+.welcome{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.title,.tagline{
+    font-family: NotoSans-SemiBold;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.035em;
+    text-transform: capitalize;
+    color: var(--titlecolor);
+    word-wrap: none; 
+    text-align: center;
+}
+
+.startbtn{
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--buttoncolor);
+    color: white;
+    font-size: 15px;
+}

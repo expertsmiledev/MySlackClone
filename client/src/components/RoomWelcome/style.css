@@ -1,0 +1,27 @@
+.welcome{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+.title,.tagline{
+    font-family: NotoSans-SemiBold;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.035em;
+    text-transform: capitalize;
+    color: var(--titlecolor);
+    word-wrap: none; 
+}
+.welcome .group-chat-name{
+    visibility: hidden;
+    opacity: 0;
+}
+.room-welcome-image{
+    width: 400px;
+    height: 400px;
+}
